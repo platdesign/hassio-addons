@@ -17,6 +17,5 @@
 	"homeassistant_api": true,
 	"ports": {
 		"8080/tcp": 5001
-	},
-	"image": "platdesign/hassio-addon-api_proxy"
+	}
 }
