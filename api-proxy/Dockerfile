@@ -23,7 +23,9 @@ WORKDIR /usr/src/app
 
 RUN npm install --production
 
-ENV NODE_ENV=production
+ENV \
+    NODE_ENV=production \
+    HOME="/root" 
 
 EXPOSE 8080
 ENTRYPOINT ["npm", "start"]
