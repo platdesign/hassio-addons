@@ -3,7 +3,7 @@ FROM mhart/alpine-node
 # Create app directory
 WORKDIR /usr/src
 
-RUN git clone https://github.com/platdesign/pd-hassio-addon-api_proxy.git .
+RUN git clone git@github.com:platdesign/pd-hassio-addon-api_proxy.git .
 
 WORKDIR /usr/src/app
 
