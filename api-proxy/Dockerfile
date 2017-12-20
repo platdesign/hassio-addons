@@ -26,8 +26,7 @@ RUN npm install --production
 ENV NODE_ENV=production
 
 EXPOSE 8080
-CMD [ "npm", "start" ]
-
+ENTRYPOINT ["npm", "start"]
 
 # Build arugments
 ARG BUILD_ARCH
