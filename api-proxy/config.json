@@ -1,0 +1,20 @@
+{
+	"name": "Api proxy",
+	"version": "1.0.0",
+	"slug": "pd_api_proxy",
+	"description": "Multi auth api proxy",
+	"startup": "services",
+	"boot": "auto",
+	"options": {
+		"apps": []
+	},
+	"schema": {
+		"apps": [
+			{ "name": "str", "token": "str" }
+		]
+	},
+	"homeassistant_api": true,
+	"ports": {
+		"8080/tcp": 5001
+	}
+}
