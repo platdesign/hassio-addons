@@ -1,9 +1,6 @@
 ARG BUILD_FROM=hassioaddons/base-amd64:1.2.0
 FROM ${BUILD_FROM}
 
-# Copy root filesystem
-#COPY ./rootfs /
-
 # Setup base
 RUN \
     apk add --no-cache --virtual .build-dependencies \
@@ -17,12 +14,16 @@ RUN \
 # Create app directory
 WORKDIR /usr/src
 
+# clone proxy app
 RUN git clone https://github.com/platdesign/hassio-addon-api_proxy.git .
 
+# set workdir
 WORKDIR /usr/src/app
 
+# install npm deps
 RUN npm install --production
 
+# set env
 ENV \
     NODE_ENV=production \
     HOME="/root" 
