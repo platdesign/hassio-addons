@@ -5,6 +5,7 @@
 	"description": "Multi auth api proxy",
 	"startup": "services",
 	"boot": "auto",
+	"url": "https://github.com/platdesign/pd-hassio-addon-api_proxy",
 	"options": {
 		"apps": []
 	},
