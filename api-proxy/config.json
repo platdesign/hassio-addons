@@ -1,6 +1,6 @@
 {
 	"name": "Api proxy",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"slug": "pd_api_proxy",
 	"description": "Multi auth api proxy",
 	"startup": "services",
