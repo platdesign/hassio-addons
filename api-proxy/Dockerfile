@@ -3,6 +3,8 @@ FROM mhart/alpine-node
 # Create app directory
 WORKDIR /usr/src
 
+RUN apk add --no-cache git
+
 RUN git clone git@github.com:platdesign/pd-hassio-addon-api_proxy.git .
 
 WORKDIR /usr/src/app
