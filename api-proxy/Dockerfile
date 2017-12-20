@@ -5,7 +5,7 @@ WORKDIR /usr/src
 
 RUN apk add --no-cache git
 
-RUN git clone https://github.com/platdesign/pd-hassio-addon-api_proxy.git .
+RUN git clone https://github.com/platdesign/hassio-addon-api_proxy.git .
 
 WORKDIR /usr/src/app
 
